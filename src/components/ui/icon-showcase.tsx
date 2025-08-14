@@ -29,7 +29,7 @@ export function IconShowcase({
       <motion.div
         whileHover={{ scale: 1.1, rotate: 5 }}
         transition={{ type: "spring", stiffness: 300, damping: 25 }}
-        className={`w-16 h-16 mx-auto mb-4 rounded-2xl bborder border-zinc-700 bg-zinc-800 flex items-center justify-center group-hover:border-red-500 transition-colors duration-300`}
+        className={`w-16 h-16 mx-auto mb-4 rounded-2xl border border-zinc-700 bg-zinc-800 flex items-center justify-center group-hover:border-red-500 transition-colors duration-300`}
       >
         <div className="relative">
                     <div className="text-red-500"><Icon size={32} className={color} /></div>

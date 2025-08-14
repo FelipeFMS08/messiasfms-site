@@ -12,7 +12,7 @@ export function NavigationMenu() {
           <Image src="/logo.svg" width={16} height={16} alt="" />
           <h1 className="w-full">Felipe Messias </h1>
         </div>
-        <ul className="flex items-center gap-10 text-white">
+        <ul className="md:flex items-center gap-10 text-white hidden">
           <Link href="#about_me">About</Link>
           <Link href="#skills">Skills</Link>
           <Link href="#projects">Projects</Link>
