@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { t } from '@/languages/languages';
-import { Button } from './ui/button';
+import { Button } from './button';
 
 interface ContactFormProps {
   lang: 'pt' | 'en';
@@ -66,7 +66,6 @@ export function ContactForm({ lang }: ContactFormProps) {
     'Let\'s discuss'
   ];
 
-  // Form validation
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
 
@@ -324,11 +323,11 @@ export function ContactForm({ lang }: ContactFormProps) {
         )}
       </div>
 
-      <div className="text-center">
+      <div className="">
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 text-lg rounded-lg btn-ripple hover-glow disabled:opacity-50 disabled:cursor-not-allowed min-w-[200px]"
+          className="bg-red-500 hover:bg-red-700 text-white px-12 py-7 text-lg rounded-lg btn-ripple hover-glow disabled:opacity-50 disabled:cursor-not-allowed min-w-[200px]"
         >
           {isSubmitting ? (
             <div className="flex items-center gap-2">
@@ -345,7 +344,7 @@ export function ContactForm({ lang }: ContactFormProps) {
         </Button>
       </div>
 
-      <p className="text-xs text-zinc-500 text-center">
+      <p className="text-xs text-zinc-500">
         {lang === 'pt' 
           ? 'Respondo todas as mensagens em até 24 horas. Vamos transformar sua ideia em realidade!' 
           : 'I respond to all messages within 24 hours. Let\'s turn your idea into reality!'}

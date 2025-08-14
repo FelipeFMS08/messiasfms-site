@@ -12,6 +12,7 @@ import {
 } from "react-icons/tb";
 import { RiJavascriptLine, RiReactjsFill } from "react-icons/ri";
 import { delay, motion } from "motion/react";
+import { FaJava } from "react-icons/fa";
 
 export function Skills() {
   return (
@@ -29,7 +30,7 @@ export function Skills() {
           tech="Typescript"
         />
         <SkillCard icon={<TbBrandCSharp size="1.5rem" />} tech="CSharp" />
-        <SkillCard icon={<TbBrandTypescript size="1.5rem" />} tech="Java" />
+        <SkillCard icon={<FaJava size="1.5rem" />} tech="Java" />
         <SkillCard
           icon={<RiJavascriptLine size="1.5rem" />}
           tech="JavaScript"

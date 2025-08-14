@@ -19,11 +19,12 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-import { ContactForm } from "@/components/contact-form";
+import { ContactForm } from "@/components/ui/contact-form";
 import { useState } from "react";
 import { t } from "@/languages/languages";
 import Link from "next/link";
 import { WorkProccess } from "@/components/ui/work-process";
+import { Projects } from "@/components/ui/projects";
 
 export default function Home() {
   const [lang, setLang] = useState<"pt" | "en">("pt");
@@ -61,46 +62,48 @@ export default function Home() {
 
   return (
     <div className="bg-zinc-900 font-sans min-h-screen">
-      <NavigationMenu />
+      <header>
+        <NavigationMenu />
+      </header>
       <main className="w-full min-h-screen flex items-center px-5 md:px-40">
         <Hero />
       </main>
       <section id="about_me" className="w-full px-5 md:px-40">
         <About />
       </section>
-      <section id="skills" className="w-full px-5 md:px-40 mt-10">
+      <section id="skills" className="w-full px-5 md:px-40 mt-20">
         <Skills />
       </section>
 
-      {/* <section id="projects" className="w-full px-5 md:px-40 mt-10">
-        <PortfolioSection lang={lang}/>
-      </section> */}
+      <section id="projects" className="w-full px-5 md:px-40 mt-20">
+        <Projects />
+      </section>
 
-      <section id="process" className="w-full px-5 md:px-40 mt-10">
+      <section id="process" className="w-full px-5 md:px-40 mt-20">
         <WorkProccess workProccessData={workProcess} />
       </section>
 
-      <section id="contact" className="w-full px-5 md:px-40 mt-10 hidden">
-        <div className="max-w-4xl mx-auto px-8">
+      <section id="contact" className="w-full px-5 md:px-40 mt-20">
+        <div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              {t[lang].contactTitle}
+            <h2 className="text-2l md:text-2xl font-bold text-white mb-6">
+              Lets work together?
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              {t[lang].contactDesc}
+            <p className=" text-gray-400 max-w-2xl">
+              Ready to turn your idea into reality? Contact us and let's discuss
+              your project.
             </p>
-            <div className="w-20 h-1 bg-red-500 mx-auto rounded-full mt-6" />
           </motion.div>
 
-          <div className="glass rounded-2xl p-8 md:p-12">
+          <div className="glass rounded-2xl ">
             {/* Contact Info */}
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-3 gap-6 mb-12 w-full">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -108,8 +111,8 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-red-500" />
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4  text-white border-zinc-700 bg-zinc-800 group-hover:border-red-500 transition-colors duration-300">
+                  <Mail className="w-8 h-8 " />
                 </div>
                 <h3 className="font-semibold text-white mb-2">
                   {t[lang].email}
@@ -126,12 +129,10 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-red-500" />
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4  text-white border-zinc-700 bg-zinc-800 group-hover:border-red-500 transition-colors duration-300">
+                  <MapPin className="w-8 h-8" />
                 </div>
-                <h3 className="font-semibold text-white mb-2">
-                  {t[lang].location}
-                </h3>
+                <h3 className="font-semibold text-white mb-2">Location</h3>
                 <p className="text-sm text-gray-400">São Paulo, Brasil</p>
               </motion.div>
 
@@ -142,18 +143,15 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-red-500" />
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4  text-white border-zinc-700 bg-zinc-800 group-hover:border-red-500 transition-colors duration-300">
+                  <Users className="w-8 h-8" />
                 </div>
-                <h3 className="font-semibold text-white mb-2">
-                  {t[lang].availability}
-                </h3>
-                <p className="text-sm text-gray-400">{t[lang].availableNow}</p>
+                <h3 className="font-semibold text-white mb-2">Availability</h3>
+                <p className="text-sm text-gray-400">Avaiable now</p>
               </motion.div>
             </div>
 
-            {/* Contact Form */}
-            <ContactForm lang={lang} />
+            <ContactForm lang={"en"} />
           </div>
         </div>
       </section>
@@ -165,14 +163,22 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white mb-2">
                 Felipe Messias<span className="text-red-500">.</span>
               </h3>
-              <p className="text-gray-400">Turning ideas into digital solutions</p>
+              <p className="text-gray-400">
+                Turning ideas into digital solutions
+              </p>
             </div>
 
             <div className="flex gap-4 text-white">
-              <Link href="/" className="bg-zinc-800 p-2 rounded">
+              <Link
+                href="http://github.com/felipeFMS08/"
+                className="bg-zinc-800 p-2 rounded"
+              >
                 <Github />
               </Link>
-              <Link href="/" className="bg-zinc-800 p-2 rounded">
+              <Link
+                href="https://www.linkedin.com/in/felipe-messias-fms/"
+                className="bg-zinc-800 p-2 rounded"
+              >
                 <LinkedinIcon />
               </Link>
             </div>
