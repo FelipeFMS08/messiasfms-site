@@ -15,6 +15,9 @@ const spaceGroteskMono = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Felipe Messias - Software Developer Portfolio",
   description: "The portfolio for Felipe Messias",
+  icons: {
+    icon: '/logo.svg'
+  }
 };
 
 export default function RootLayout({

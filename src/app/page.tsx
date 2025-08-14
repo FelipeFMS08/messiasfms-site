@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="bg-zinc-900 font-sans min-h-screen">
       <NavigationMenu />
-      <main className="w-full min-h-screen flex items-center px-40">
+      <main className="w-full min-h-screen flex items-center px-5 md:px-40">
         <Hero />
       </main>
       <section id="about_me" className="w-full px-40">
