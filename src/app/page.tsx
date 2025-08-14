@@ -24,7 +24,6 @@ import { useState } from "react";
 import { t } from "@/languages/languages";
 import Link from "next/link";
 import { WorkProccess } from "@/components/ui/work-process";
-import { PortfolioSection } from "@/components/ui/portfolio-section";
 
 export default function Home() {
   const [lang, setLang] = useState<"pt" | "en">("pt");
