@@ -1,0 +1,13 @@
+import { Button } from "./button";
+
+export function Hero() {
+  return (
+      <div className="bg-gradient-to-br from-red-400 to-red-900 w-full min-h-full px-10 pt-40 pb-15 rounded-xl">
+        <div className="mt-10 flex flex-col gap-6">
+          <h1 className="font-bold text-white text-6xl">Software Developer</h1>
+          <p className="text-white text-lg">I'm a passionate software developer specializing in creating innovative and efficient solutions. With a strong foundation in computer science and a keen eye for detail, I strive to deliver high-quality software that meets and exceeds expectations.</p>
+          <Button className="bg-zinc-900 text-white hover:bg-zinc-800 transition-all duration-300 font-semibold text-lg w-50 py-7 mt-5">View Projects</Button>
+        </div>
+    </div>
+  )
+}
