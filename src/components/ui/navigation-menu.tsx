@@ -8,12 +8,12 @@ export function NavigationMenu(){
 
   return (
     <nav className="fixed w-full top-0 left-0 right-0 z-50 transition-all duration-100 h-15 border-b border-b-white bg-zinc-900">
-      <div className="flex justify-between items-center px-10 h-full">
+      <div className="flex md:justify-between items-center px-10 h-full">
       <div className="flex items-center font-semibold text-white space-x-2">
         <Image src="/logo.svg" width={16} height={16} alt="" />
-        <h1>Felipe Messias</h1>
+        <h1 className="w-screen">Felipe Messias</h1>
       </div>
-      <ul className="flex items-center gap-10 text-white">
+      <ul className="flex items-center gap-10 text-white invisible md:visible">
       <Link href="#about_me">About</Link>
       <Link href="#skills">Skills</Link>
       <Link href="#projects">Projects</Link>
