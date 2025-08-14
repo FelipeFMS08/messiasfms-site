@@ -100,37 +100,43 @@ export function ContactForm({ lang }: ContactFormProps) {
   };
 
   // Handle form submission
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) return;
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  if (!validateForm()) return;
 
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
+  setIsSubmitting(true);
+  setSubmitStatus('idle');
 
-    try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // In a real application, you would send the data to your backend
-      console.log('Form submitted:', formData);
-      
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', project: '', budget: '', message: '' });
-      setErrors({});
-    } catch (error) {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to send message');
     }
-  };
+    
+    
+    setSubmitStatus('success');
+    setFormData({ name: '', email: '', project: '', budget: '', message: '' });
+    setErrors({});
+  } catch (error) {
+    console.error(error);
+    setSubmitStatus('error');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
-  // Handle input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     
-    // Clear error when user starts typing
     if (errors[name as keyof FormErrors]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
     }
@@ -144,7 +150,6 @@ export function ContactForm({ lang }: ContactFormProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      {/* Success/Error Messages */}
       {submitStatus === 'success' && (
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -175,7 +180,6 @@ export function ContactForm({ lang }: ContactFormProps) {
         </motion.div>
       )}
 
-      {/* Form Fields */}
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <label className="block text-sm font-medium text-zinc-300 mb-2">
