@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: 'Felipe Messias Portfolio',
     images: [
       {
-        url: '/og-image.png', // Your social sharing image (1200x630)
+        url: '/og-image.png', 
         width: 1200,
         height: 630,
         alt: 'Felipe Messias Portfolio Banner',
@@ -55,23 +55,21 @@ export const metadata: Metadata = {
     type: 'website',
   },
 
-  // Twitter Card
   twitter: {
     card: 'summary_large_image',
     title: 'Felipe Messias - Software Developer Portfolio',
     description: 'Explore the projects and skills of Felipe Messias, a software developer.',
-    creator: '@your_twitter_handle', // Replace with your Twitter handle
-    images: ['/og-image.png'], // Reuses the Open Graph image
+    creator: '@your_twitter_handle', 
+    images: ['/og-image.png'], 
   },
 };
 
-// JSON-LD Structured Data for Rich Results
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Felipe Messias',
   url: 'https://messiasfms.dev',
-  sameAs: [ // Replace with your actual social media links
+  sameAs: [ 
     'https://www.linkedin.com/in/your-linkedin-profile/',
     'https://github.com/your-github-profile',
   ],
