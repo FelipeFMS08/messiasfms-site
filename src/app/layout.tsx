@@ -13,12 +13,71 @@ const spaceGroteskMono = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Felipe Messias - Software Developer Portfolio",
-  description: "The portfolio for Felipe Messias",
+  // Base URL for your site
+  metadataBase: new URL('https://messiasfms.dev'),
+
+  // Core metadata from your request
+  title: {
+    template: '%s | Felipe Messias',
+    default: 'Felipe Messias - Software Developer Portfolio',
+  },
+  description: 'The portfolio for Felipe Messias, a passionate software developer creating modern and efficient web solutions.',
+  
+  // Favicon from your request
   icons: {
-    icon: '/logo.svg'
-  }
+    icon: '/logo.svg',
+  },
+
+  // Keywords for search engines
+  keywords: ['Software Developer', 'Programmer', 'Next.js', 'React', 'TypeScript', 'Portfolio', 'Felipe Messias'],
+  
+  // Author information
+  authors: [{ name: 'Felipe Messias' }],
+  creator: 'Felipe Messias',
+  
+  // --- Social Media & SEO Enhancements ---
+
+  // Open Graph (for Facebook, LinkedIn, WhatsApp, etc.)
+  openGraph: {
+    title: 'Felipe Messias - Software Developer Portfolio',
+    description: 'Explore the projects and skills of Felipe Messias, a software developer.',
+    url: 'https://messiasfms.dev',
+    siteName: 'Felipe Messias Portfolio',
+    images: [
+      {
+        url: '/og-image.png', // Your social sharing image (1200x630)
+        width: 1200,
+        height: 630,
+        alt: 'Felipe Messias Portfolio Banner',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+
+  // Twitter Card
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Felipe Messias - Software Developer Portfolio',
+    description: 'Explore the projects and skills of Felipe Messias, a software developer.',
+    creator: '@your_twitter_handle', // Replace with your Twitter handle
+    images: ['/og-image.png'], // Reuses the Open Graph image
+  },
 };
+
+// JSON-LD Structured Data for Rich Results
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Felipe Messias',
+  url: 'https://messiasfms.dev',
+  sameAs: [ // Replace with your actual social media links
+    'https://www.linkedin.com/in/your-linkedin-profile/',
+    'https://github.com/your-github-profile',
+  ],
+  jobTitle: 'Software Developer',
+};
+
 
 export default function RootLayout({
   children,
@@ -30,6 +89,10 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${spaceGroteskMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>

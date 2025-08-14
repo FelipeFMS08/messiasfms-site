@@ -24,6 +24,7 @@ import { useState } from "react";
 import { t } from "@/languages/languages";
 import Link from "next/link";
 import { WorkProccess } from "@/components/ui/work-process";
+import { PortfolioSection } from "@/components/ui/portfolio-section";
 
 export default function Home() {
   const [lang, setLang] = useState<"pt" | "en">("pt");
@@ -71,6 +72,10 @@ export default function Home() {
       <section id="skills" className="w-full px-5 md:px-40 mt-10">
         <Skills />
       </section>
+
+      {/* <section id="projects" className="w-full px-5 md:px-40 mt-10">
+        <PortfolioSection lang={lang}/>
+      </section> */}
 
       <section id="process" className="w-full px-5 md:px-40 mt-10">
         <WorkProccess workProccessData={workProcess} />
