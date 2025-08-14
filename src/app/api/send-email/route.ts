@@ -4,15 +4,14 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
 
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { name, email, project, budget, message } = body;
 
     const { data, error } = await resend.emails.send({
-      from: 'Contato Portfólio <Site WEB>',
-      to: ['felipe.messias.fms@gmail.com'], 
+      from: 'Contato Portfólio <contato@messiasfms.dev>', 
+      to: 'felipe.messias.fms@gmail.com', 
       subject: `Novo Contato de ${name} - Projeto de ${project}`,
       react: EmailTemplate({ name, email, project, budget, message }),
     });
