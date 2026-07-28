@@ -1,0 +1,232 @@
+{
+  "pt": {
+    "nav": {
+      "experience": "Experiência",
+      "projects": "Projetos",
+      "agency": "Agência",
+      "connect": "Contato",
+      "available": "Disponível para projetos",
+      "startProject": "Iniciar Projeto",
+      "menu": "Menu",
+      "timeInSp": "em São Paulo",
+      "liveTime": "Tempo Real"
+    },
+    "hero": {
+      "label": "Felipe Messias — Engenheiro de IA & Desenvolvedor Fullstack",
+      "headline": "Arquitetando soluções digitais\nde alto impacto com\nengenharia de IA aplicada.",
+      "viewPortfolio": "Ver Portfólio",
+      "founder": "Co-fundador FP Solutions",
+      "badge": "Agência IA-Native"
+    },
+    "philosophy": {
+      "badge": "Filosofia de Engenharia",
+      "title": "Combinando fundamentos de engenharia de software\ncom automação inteligente.",
+      "bio": "Com mais de 4 anos de experiência profissional (perto de 7 programando) construindo sistemas escaláveis, atuo em sistemas críticos de ambiente de saúde regulado, desenvolvendo pipelines de automação por IA em produção sobre arquiteturas DDD e Clean Code.",
+      "cta": "Conhecer Trajetória",
+      "card1Title": "Arquitetura & Stack",
+      "card1Tech": "TypeScript • React • Next.js • Elysia.js • Azure • Docker",
+      "card2Label": "Especialização Avançada",
+      "card2Title": "MBA & Educação",
+      "card2Desc": "MBA em Software Engineering with AI (Full Cycle) em andamento, com foco nos últimos 2 anos em engenharia de IA aplicada.",
+      "cuboLabel": "Experiência Prévia",
+      "cuboconnectDesc": "Três anos construindo APIs backend e pipelines de processamento de dados consumidos em escala, integrando sistemas terceiros (REST, SOAP, LDAP) e otimizando performance em PostgreSQL, MySQL e SQL Server.",
+      "cuboInfra": "Integrações",
+      "cuboOpt": "Otimização de Queries",
+      "cuboOptValue": "MySQL • PostgreSQL • SQL Server",
+      "cuboActive": "Ativo 2022 - 2025",
+      "agencyLabel": "FP Solutions Lab",
+      "agencyPartnership": "Parceria Direta",
+      "agencyCount": "50+",
+      "agencyCountDesc": "Sistemas Web & Mobile Entregues",
+      "agencyTech": "Next.js",
+      "agencyTechDesc": "Fundações de Motor & Arquiteturas",
+      "agencyDesc": "Projetos com design-systems customizados, animações baseadas em Framer Motion (`motion/react`) e infraestrutura de nuvem própria.",
+      "agencyQuality": "Qualidade de Assinatura"
+    },
+    "projects": {
+      "badge": "Sistemas em Produção",
+      "title": "Sistemas & Projetos de Engenharia",
+      "case1Label": "Telemetria & Logística",
+      "case1Title": "Sistema Fleet Alert",
+      "case1Desc": "Plataforma de monitoramento de frota veicular em tempo real com geofencing, integração RFID de leitura dinâmica e esquemas de localização síncronos de alta precisão.",
+      "telemetryLabel": "TELEMETRIA_ATIVO",
+      "moreLabel": "Ver Repositório",
+      "privateLabel": "Privado",
+      "moreCases": [
+        {
+          "label": "Gestão Financeira",
+          "title": "Triz Financeiro",
+          "desc": "Aplicação de gestão financeira pessoal: controle de despesas, orçamento e análises com visualização de dados, construída em Next.js com Drizzle e SQLite (Turso).",
+          "stack": ["Next.js", "TypeScript", "Drizzle", "Turso"],
+          "status": "Open source",
+          "href": "https://github.com/FelipeFMS08/triz-financeiro"
+        },
+        {
+          "label": "Automação com IA",
+          "title": "FP Forge",
+          "desc": "Cockpit desktop para orquestrar agentes de IA em pipelines de código: pesquisa e plano rodam isolados antes de qualquer execução, sessões paralelas em worktrees Git, aprovação humana em cada etapa, voz local (whisper.cpp), replay com exportação em vídeo e geração de peças de marca a partir de um vault de identidade.",
+          "stack": ["Tauri", "Rust", "React", "TypeScript"],
+          "status": "v0.3 · Open source planejado",
+          "href": null
+        },
+        {
+          "label": "SaaS Próprio",
+          "title": "Dulcefy",
+          "desc": "Plataforma de precificação e gestão para confeiteiros e pequenos negócios de alimentação: cálculo de preço sugerido por receita e assistente de IA para decisões de markup.",
+          "stack": ["Elysia", "Drizzle", "PostgreSQL", "Stripe"],
+          "status": "SaaS próprio",
+          "href": "https://dulcefy.com.br"
+        },
+        {
+          "label": "Operações & IA por Voz",
+          "title": "FP Portal",
+          "desc": "Portal interno de operações com videoconferência self-hosted e um copiloto de IA que executa ações reais durante a chamada: cria tarefa, vincula projeto e confirma por voz.",
+          "stack": ["Next.js", "LiveKit", "Gemini Live", "PostgreSQL"],
+          "status": "Interno · Em produção",
+          "href": null
+        },
+        {
+          "label": "Sistemas Multiplayer",
+          "title": "Prison: Undertow",
+          "desc": "Servidor Minecraft com economia própria e mais de 15 plugins em Java, arquitetados como monorepo Gradle com suíte de testes automatizada.",
+          "stack": ["Java 21", "Paper", "MySQL", "Gradle"],
+          "status": "Produto próprio",
+          "href": null
+        },
+        {
+          "label": "Parceria Comercial",
+          "title": "iSales Group",
+          "desc": "CRM e landing page em desenvolvimento com a iSales Group, focados no acompanhamento diário de vendas e funil por vendedor a partir do processo real do cliente.",
+          "stack": ["Next.js", "TypeScript", "Tailwind"],
+          "status": "Em parceria · Discovery",
+          "href": null
+        }
+      ]
+    },
+    "contact": {
+      "title": "Vamos arquitetar o\nseu próximo sistema?",
+      "desc": "Fale diretamente com Felipe Messias para desenvolvimento de plataformas avançadas, pipelines de IA nativa, e-commerce transacionais ou consultorias premium de arquiteturas fullstack.",
+      "copyEmail": "Copiar felipe.messias.fms@gmail.com",
+      "copiedEmail": "Email Copiado!",
+      "githubBtn": "Explorar Trajetória no GitHub",
+      "copyright": "Felipe Messias. Projetado com diretrizes de luxo premium dark.",
+      "availability": "Disponível para contratos selecionados globais",
+      "activeCity": "Ativo em São Paulo"
+    }
+  },
+  "en": {
+    "nav": {
+      "experience": "Experience",
+      "projects": "Projects",
+      "agency": "Agency",
+      "connect": "Connect",
+      "available": "Available for projects",
+      "startProject": "Start a project",
+      "menu": "Menu",
+      "timeInSp": "in São Paulo",
+      "liveTime": "Live Time"
+    },
+    "hero": {
+      "label": "Felipe Messias — AI Engineer & Fullstack Developer",
+      "headline": "Architecting high-impact\ndigital solutions with\napplied AI engineering.",
+      "viewPortfolio": "View Portfolio",
+      "founder": "FP Solutions Co-Founder",
+      "badge": "AI-Native Agency"
+    },
+    "philosophy": {
+      "badge": "Engineering Philosophy",
+      "title": "Combining core software engineering\nfundamentals with intelligent automation.",
+      "bio": "With 4+ years of professional experience (close to 7 years coding) building scalable systems, I work on critical systems in a regulated healthcare environment, building AI automation pipelines in production on top of DDD and Clean Code architectures.",
+      "cta": "Discover Journey",
+      "card1Title": "Architectural Stack",
+      "card1Tech": "TypeScript • React • Next.js • Elysia.js • Azure • Docker",
+      "card2Label": "Advanced Specialization",
+      "card2Title": "MBA & Education",
+      "card2Desc": "MBA in Software Engineering with AI (Full Cycle) in progress, focused for the last 2 years on applied AI engineering.",
+      "cuboLabel": "Prior Experience",
+      "cuboconnectDesc": "Three years building backend APIs and data processing pipelines consumed at scale, integrating third-party systems (REST, SOAP, LDAP) and optimizing performance across PostgreSQL, MySQL and SQL Server.",
+      "cuboInfra": "Integrations",
+      "cuboOpt": "Query Optimization",
+      "cuboOptValue": "MySQL • PostgreSQL • SQL Server",
+      "cuboActive": "Active 2022 - 2025",
+      "agencyLabel": "FP Solutions Lab",
+      "agencyPartnership": "Direct Partnership",
+      "agencyCount": "50+",
+      "agencyCountDesc": "Web & Mobile Systems Delivered",
+      "agencyTech": "Next.js",
+      "agencyTechDesc": "Engine & Architectural Foundations",
+      "agencyDesc": "Projects with custom design systems, animations built on Framer Motion (`motion/react`) and self-managed cloud infrastructure.",
+      "agencyQuality": "Signature Quality"
+    },
+    "projects": {
+      "badge": "Featured Engineering Systems",
+      "title": "Production-ready projects",
+      "case1Label": "Telemetry & Logistics",
+      "case1Title": "Fleet Alert System",
+      "case1Desc": "Real-time vehicle monitoring platform with geofencing, RFID tag integration, and advanced ultra-low latency location telemetry pipelines.",
+      "telemetryLabel": "TELEMETRIA_ACTIVE",
+      "moreLabel": "View Repository",
+      "privateLabel": "Private",
+      "moreCases": [
+        {
+          "label": "Personal Finance",
+          "title": "Triz Financeiro",
+          "desc": "Personal finance management app: expense tracking, budgeting and analytics with data visualization, built with Next.js, Drizzle and SQLite (Turso).",
+          "stack": ["Next.js", "TypeScript", "Drizzle", "Turso"],
+          "status": "Open source",
+          "href": "https://github.com/FelipeFMS08/triz-financeiro"
+        },
+        {
+          "label": "AI Automation",
+          "title": "FP Forge",
+          "desc": "Desktop cockpit for orchestrating coding agents: research and planning run isolated before any execution, parallel sessions in Git worktrees, human approval at every step, local voice input (whisper.cpp), replay with video export, and brand asset generation from an identity vault.",
+          "stack": ["Tauri", "Rust", "React", "TypeScript"],
+          "status": "v0.3 · Open source planned",
+          "href": null
+        },
+        {
+          "label": "Own SaaS",
+          "title": "Dulcefy",
+          "desc": "Pricing and management platform for bakers and small food businesses: suggested pricing per recipe and an AI assistant for markup decisions.",
+          "stack": ["Elysia", "Drizzle", "PostgreSQL", "Stripe"],
+          "status": "Own SaaS",
+          "href": "https://dulcefy.com.br"
+        },
+        {
+          "label": "Ops & Voice AI",
+          "title": "FP Portal",
+          "desc": "Internal operations portal with self-hosted video conferencing and an AI copilot that takes real actions mid-call: creates a task, links it to a project and confirms by voice.",
+          "stack": ["Next.js", "LiveKit", "Gemini Live", "PostgreSQL"],
+          "status": "Internal · In production",
+          "href": null
+        },
+        {
+          "label": "Multiplayer Systems",
+          "title": "Prison: Undertow",
+          "desc": "Minecraft server with a custom economy and 15+ Java plugins, architected as a Gradle monorepo with an automated test suite.",
+          "stack": ["Java 21", "Paper", "MySQL", "Gradle"],
+          "status": "Own product",
+          "href": null
+        },
+        {
+          "label": "Client Partnership",
+          "title": "iSales Group",
+          "desc": "CRM and landing page in development with iSales Group, focused on daily sales tracking and per-rep pipeline built from the client's real process.",
+          "stack": ["Next.js", "TypeScript", "Tailwind"],
+          "status": "Partnership · Discovery",
+          "href": null
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's architect\nyour next system",
+      "desc": "Talk directly with Felipe Messias for high-performance platform builds, AI-native pipelines, complex transactional modules or premium fullstack integration consultancy.",
+      "copyEmail": "Copy felipe.messias.fms@gmail.com",
+      "copiedEmail": "Email Copied!",
+      "githubBtn": "Explore GitHub Trajectory",
+      "copyright": "Felipe Messias. Designed with premium dark luxury guidelines.",
+      "availability": "Available for select contract-work globally",
+      "activeCity": "Active In São Paulo"
+    }
+  }
+}
